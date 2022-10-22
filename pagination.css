@@ -133,6 +133,7 @@ button {
 margin:1rem 50%;
 padding: 5px;
 min-width: 60px;
+writing-mode: unset !important
 /*content*/
 background-color:#939393;
 color:#f6f7f8;
