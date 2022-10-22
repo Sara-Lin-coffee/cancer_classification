@@ -28,8 +28,9 @@ h2,
 h3,
 h4,
 h5 {
-  margin: 0;
+  margin: 0 0 1rem 0;
   line-height: 0.9;
+
   color:#267b98;
 }
 
@@ -97,15 +98,17 @@ header {
 
 /*********Table*********/
 table {
-  margin-top: 1rem;
+  /*block*/
   width: 100%;
   border: #267b98 1px solid;
 }
 
 .sub_title {
+  /*block*/
+  text-align: center;
+  /*content*/
   color: #267b98;
   font-size: large;
-  text-align: center;
 }
 
 th {
@@ -118,7 +121,23 @@ th {
   font-weight: 100;
 }
 
+/*********Treatment*********/
+p {
+/*block*/
+margin-bottom: 1rem;
+}
 
+/*********Button*********/
+button {
+/*block*/
+margin:1rem 50%;
+padding: 5px;
+min-width: 60px;
+/*content*/
+background-color:#939393;
+color:#f6f7f8;
+border: none;
+}
 
 
 
