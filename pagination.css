@@ -1,0 +1,125 @@
+/* 載入字型 */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700&display=swap&subset=chinese-traditional");
+
+/*移除瀏覽器預設*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #f6f7f8;
+  font-family: "Noto Sans TC", sans-serif;
+  /* 設定字型 */
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  line-height: 0.9;
+  color:#267b98;
+}
+
+p {
+  margin: 0;
+  color:#535353;
+}
+
+ul,
+li {
+  list-style-type: none;
+  /* 拿掉前方圈圈 */
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  /* 拿掉底線 */
+}
+
+/*基本樣式設定*/
+/*設定區塊寬度一致並置中*/
+.container {
+  width: 85%;
+  margin: 0 auto 3rem auto;
+}
+
+.background-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*********Main Header*********/
+
+header {
+  /*positioning*/
+  position: fixed;
+  z-index: 999;
+  /*content*/
+  width: 100%;
+  height: 60px;
+  text-align: start;
+  padding: 0 2rem;
+  background: #ffffff;
+  /*note:陰影*/
+  -webkit-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  /*content*/
+  color: #267b98;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+/*********Title*********/
+#title {
+  padding-top: 70px;
+}
+
+/*********Table*********/
+table {
+  margin-top: 1rem;
+  width: 100%;
+  border: #267b98 1px solid;
+}
+
+.sub_title {
+  color: #267b98;
+  font-size: large;
+  text-align: center;
+}
+
+th {
+  /*block*/
+  border: #535353 1px solid;
+  text-align: start;
+  padding: 5px;
+  /*content*/
+  color:#535353;
+  font-weight: 100;
+}
+
+
+
+
+
+
