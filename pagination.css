@@ -129,7 +129,7 @@ th {
 /*********Button*********/
 button {
 /*block*/
-margin:1rem 50%;
+margin: 0 45%;
 padding: 5px;
 min-width: 60px;
 writing-mode: unset !important;
@@ -141,6 +141,10 @@ border: none;
 
 /*********電腦版*********/
 @media screen and (min-width: 768px) {
+.container {
+    width: 70%;
+    margin: 0 auto 3rem auto;
+  }
   p {
     /*block*/
     max-width: 880px;
