@@ -140,6 +140,23 @@ color:#f6f7f8;
 border: none;
 }
 
+/*********Footer*********/
+footer {
+  /*block*/
+  text-align: center;
+  padding: 0.5rem;
+  /*content*/
+  width: 100%;
+  background: #267b98;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.designer-info {
+  padding-top: 0.5rem;
+  font-size: small;
+  font-weight: 100;
+}
 
 
 /*********電腦版*********/

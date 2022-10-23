@@ -171,6 +171,7 @@ footer {
 
 /*********電腦版*********/
 @media screen and (min-width: 768px){
+  
   /**===Album===**/
   .album-wrapper {
     /*position*/
@@ -182,5 +183,4 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 150px 40px;
-
 }
