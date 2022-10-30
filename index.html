@@ -16,40 +16,7 @@
 <header>
   <a href="#" class="navbar-brand">癌症分期</a>
 
-<!--hamburger & checkbox-->
-  <input type="checkbox" class="nav-toggle" id="nav-toggle">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item"><label for="sub-nav-toggle-1" class="nav-link">頭頸癌</label></li>
-        <input type="checkbox" class="sub-nav-toggle" id="sub-nav-toggle-1">
-        <nav class="sub-nav">
-          <ul class="nav-list">
-            <li class="sub-nav-item"><a href="1_headAndNeck.html" class="sub-nav-link">頭頸癌1</a></li>
-            <li class="sub-nav-item"><a href="" class="sub-nav-link">頭頸癌2</a></li>
-            <li class="sub-nav-item"><a href="" class="sub-nav-link">頭頸癌3</a></li>
-          </ul>
-        </nav>
-        
-      <li class="nav-item"><label for="sub-nav-toggle-2" class="nav-link">婦癌</label></li>
-        <input type="checkbox" class="sub-nav-toggle" id="sub-nav-toggle-2">
-        <nav class="sub-nav">
-          <ul class="nav-list">
-            <li class="sub-nav-item"><a href="" class="sub-nav-link">婦癌1</a></li>
-            <li class="sub-nav-item"><a href="" class="sub-nav-link">婦癌2</a></li>
-          </ul>
-        </nav>
-      <li class="nav-item"><a href="" class="nav-link">血癌</a></li>
-      <li class="nav-item"><a href="" class="nav-link">胃腸癌</a></li>
-      <li class="nav-item"><a href="" class="nav-link">泌尿道癌</a></li>
-      <li class="nav-item"><a href="" class="nav-link">乳癌</a></li>
-      <li class="nav-item"><a href="" class="nav-link">腦癌</a></li>
-      <li class="nav-item"><a href="" class="nav-link">肺癌</a></li>
-    </ul>
-  </nav>
-  
-  <label for="nav-toggle" class="navbar-toggle-label">
-    <span class="hamburger"></span>
-  </label>
+
 </header>
 
 <h1>癌症分期</h1>
@@ -58,13 +25,28 @@
 <section id="album">
   <div class="container">
     <div class="album-wrapper">
-      <a href="" target="_self" class="card">
-        <img src="img\1_brain.png" alt="" class="card-img" />
-        <div class="card-text">
-          <h3 class="card-title">中樞神經腫瘤<span>（腦瘤)</span></h3>
+      <div class="card">
+        <img src="img\1_brain.png" alt="" class="card-img"/>
+        <div class="card-text" label for="Size">
+          <h3 class="card-title">中樞神經腫瘤<span>(腦瘤)</span></h3>
           <p class="card-description">CNS malignancy</p>
         </div>
-      </a>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="" class="nav-link"><span>多形性膠質母細胞瘤</sapn><br><span>Glioblastoma</span></a></li>
+            <li class="nav-item"><a href="" class="nav-link"><span>分化不良型膠質細胞瘤</sapn><br><span>Anaplastic glioma</span></a></li>
+            <li class="nav-item"><a href="" class="nav-link"><span>低度惡性膠質細胞瘤</sapn><br><span>Low grade glioma</span></a></li>
+            <li class="nav-item"><a href="" class="nav-link"><span>腦膜瘤</sapn><br><span>Meningioma</span></a></li>
+            <li class="nav-item"><a href="" class="nav-link"><span>中樞神經淋巴瘤</sapn><br><span>Primary central nervous system
+                    lymphma, PCNSL</span></a></li>
+            <li class="nav-item"><a href="" class="nav-link"><span>腦下垂體瘤</sapn><br><span>Pituitary Adenoma</span></a></li>
+            <li class="nav-item"><a href="" class="nav-link"><span>脈絡膜黑色素瘤</sapn><br><span>Uveal melanoma</span></a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle"></label>
+      </div>
+      
       <a href="" target="_self" class="card">
         <img src="img\2_head_and_neck.png" alt="" class="card-img" />
         <div class="card-text">

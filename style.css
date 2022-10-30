@@ -97,9 +97,10 @@ h1{
   /*positioning*/
   position: absolute;
   /*block*/
-  top: 100%;
-  right:0;
-  width: 250px;
+  z-index: 999;
+  top: 0;
+  left: 100%;
+  width: 230px;
   /*content*/
   background: #ffffff;
   /*animation*/
@@ -109,96 +110,25 @@ h1{
   transform-origin: top;
 }
 
-.nav-toggle {
-  /*positioning*/
-  display: none;
+label {
+  /*positioning
+  display: none;*/
 }
 
 .nav-item {
   /*block*/
+  text-align: start;
   margin: 1.4rem;
   /*content*/
-  opacity: 0;
+  opacity: 1;
   /*animation*/
   transition: opacity 0.2s ease-out 0.15s;
 }
 
-.nav-link {
-
+.nav-link span{
   /*content*/
   color: #267b98;
   border-bottom: dashed 1px #267b98;
-}
-
-.navbar-toggle-label {
-  /*positioning*/
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 7.5%;
-
-  display: flex;
-  align-items: center;
-}
-
-.sub-nav-toggle {
-  /*positioning*/
-  display: none;
-}
-
-.sub-nav {
-  /*positioning*/
-  position: relative;
-  /*block*/
-  top: 0;
-  left: 50%;
-  background:#ffffff
- 
-}
-
-.sub-nav-link {
-  color:#535353;
-  padding-left: 5px;
-  border-left: solid 2px #D3D3D3;
-}
-
-.sub-nav-item {
-  display:none;
-  /*block*/
-  margin: 1.4rem;
-}
-
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-  /*content*/
-  height: 3px;
-  width: 30px;
-  background: #267b98;
-}
-
-.hamburger {
-  /*positioning*/
-  position: relative;
-}
-
-.hamburger::before,
-.hamburger::after {
-  /*positioning*/
-  position: absolute;
-  left: 0;
-  /*content*/
-  content: " "
-}
-
-.hamburger::before {
-  /*positioning*/
-  bottom: 8px;
-}
-
-.hamburger::after {
-  /*positioning*/
-  top: 8px;
 }
 
 /*==animation==*/
@@ -225,7 +155,7 @@ h1{
 .album-wrapper {
   /*position*/
   display: grid;
-  grid-template-columns: repeat(auto-fit, 150px);
+  grid-template-columns: repeat(auto-fit, 190px);
   grid-template-rows: repeat(auto, auto);
   grid-gap: 0.5rem;
   padding-top: 1rem;
@@ -236,6 +166,7 @@ h1{
 
 .card {
   /*position*/
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100px fit-content;

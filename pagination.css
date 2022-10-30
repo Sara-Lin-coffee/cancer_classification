@@ -96,6 +96,129 @@ header {
   line-height: 60px;
 }
 
+/*********hamburger & checkbox*********/
+.nav {
+  /*positioning*/
+  position: absolute;
+  /*block*/
+  top: 100%;
+  right: 0;
+  width: 250px;
+  /*content*/
+  background: #ffffff;
+  /*animation*/
+  transition: transform .2s ease-out;
+
+  transform: scale(1, 0);
+  transform-origin: top;
+}
+
+.nav-toggle {
+  /*positioning*/
+  display: none;
+}
+
+.nav-item {
+  /*block*/
+  margin: 1.4rem;
+  /*content*/
+  opacity: 0;
+  /*animation*/
+  transition: opacity 0.2s ease-out 0.15s;
+}
+
+.nav-link {
+
+  /*content*/
+  color: #267b98;
+  border-bottom: dashed 1px #267b98;
+}
+
+.navbar-toggle-label {
+  /*positioning*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 7.5%;
+
+  display: flex;
+  align-items: center;
+}
+
+.sub-nav-toggle {
+  /*positioning*/
+  display: none;
+}
+
+.sub-nav {
+  /*positioning*/
+  position: relative;
+  /*block*/
+  top: 0;
+  left: 50%;
+  background: #ffffff
+}
+
+.sub-nav-link {
+  color: #535353;
+  padding-left: 5px;
+  border-left: solid 2px #D3D3D3;
+}
+
+.sub-nav-item {
+  display: none;
+  /*block*/
+  margin: 1.4rem;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  /*content*/
+  height: 3px;
+  width: 30px;
+  background: #267b98;
+}
+
+.hamburger {
+  /*positioning*/
+  position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+  /*positioning*/
+  position: absolute;
+  left: 0;
+  /*content*/
+  content: " "
+}
+
+.hamburger::before {
+  /*positioning*/
+  bottom: 8px;
+}
+
+.hamburger::after {
+  /*positioning*/
+  top: 8px;
+}
+
+/*==animation==*/
+.nav-toggle:checked~.nav {
+  /*content*/
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked~.nav .nav-item {
+  /*content*/
+  opacity: 1;
+}
+
+.sub-nav-toggle:checked+.sub-nav .sub-nav-item {
+  display: block;
+}
+
 /*********INtroduction*********/
 #introduction{
   padding-top: 70px;
