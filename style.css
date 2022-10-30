@@ -88,6 +88,10 @@ header {
   line-height: 60px;
 }
 
+h1{
+  display: none;
+}
+
 /*********hamburger & checkbox*********/
 .nav {
   /*positioning*/
@@ -234,7 +238,7 @@ header {
   /*position*/
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 30px;
+  grid-template-rows: 100px fit-content;
   grid-gap: 1rem;
   /*block*/
   padding: 1rem;
@@ -262,6 +266,24 @@ header {
   color: #267b98;
   /*animation*/
   transition: color 0.3s ease-out;
+}
+
+.card-title{
+  /*block*/
+  margin-bottom: 7px;
+  /*content*/
+  line-height: 20px;
+}
+
+.card-title span{
+  /*content*/
+  font-size: small;
+}
+
+.card-description{
+  /*content*/
+  line-height: 15px;
+  font-size:medium
 }
 
 .card:hover .card-text{
