@@ -98,9 +98,9 @@ header {
 .album-wrapper {
   /*position*/
   display: grid;
-  grid-template-columns: repeat(auto-fit, 270px);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   grid-template-rows: repeat(auto, auto);
-  grid-gap: 0.5rem;
+  grid-gap: 0.5px;
   padding-top: 1rem;
   /*block*/
   justify-content: space-around;
@@ -112,7 +112,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: fit-content;
-  grid-gap: 0.5rem;
+  grid-gap: 0.7rem;
   /*block*/
   padding: 1rem;
   /*content*/
@@ -144,17 +144,18 @@ header {
 .card-description{
   /*content*/
   line-height: 15px;
-  font-size:medium
+  font-size: small;
 }
 
 .nav-item {
   /*block*/
   text-align: start;
-  margin-top: 1.4rem;
+  margin-top: 0.8rem;
 }
 
 .nav-link{
   /*content*/
+  font-size: small;
   color: #267b98;
   border-bottom: dashed 1px #267b98;
 }
@@ -190,7 +191,8 @@ footer {
   /**===Album===**/
   .album-wrapper {
     /*position*/
-    grid-template-columns: repeat(auto-fit, 380px);
+    grid-template-columns: repeat(auto-fit, 280px);
+    grid-gap: 1px;
   }
   .card {
     /*position*/
@@ -203,16 +205,15 @@ footer {
 
   .card-title{
     /*content*/
-    font-size: x-large;
+    font-size: large;
   }
 
   .card-description{
     /*content*/
-    line-height: 20px;
-    font-size: large;
+    font-size: medium;
   }
 
-  li {
-    font-size: large;
+  .nav-link {
+    font-size: medium;
   }
 }
