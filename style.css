@@ -100,7 +100,7 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   grid-template-rows: repeat(auto, auto);
-  grid-gap: 0.5px;
+  grid-gap: 0.7px;
   padding-top: 1rem;
   /*block*/
   justify-content: space-around;
@@ -147,20 +147,22 @@ header {
   font-size: small;
 }
 
-.nav-item {
+.nav-link{
+  display: block;
   /*block*/
   text-align: start;
-  margin-top: 0.8rem;
-}
-
-.nav-link{
+  padding-top: 0.8rem;
   /*content*/
   font-size: small;
   color: #267b98;
   border-bottom: dashed 1px #267b98;
 }
 
-.nav-link:hover{
+.nav-link:nth-child(odd){
+  color:#535353;
+}
+
+.nav-link:hover {
   /*content*/
   color: #D26900;
 }
