@@ -112,9 +112,13 @@ header {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: fit-content;
+  grid-template-areas: 
+  "img title"
+  "items items";
   grid-gap: 0.7rem;
   /*block*/
   padding: 1rem;
+  align-content: flex-start;
   /*content*/
   width: 100%;
   /*陰影*/
@@ -124,14 +128,19 @@ header {
   }
 
 .card-img {
+  /*position*/
+  grid-area: img;
   /*content*/
   width: 100%;
   height: auto;
 }
 
 .card-text {
+  /*position*/
+  grid-area: title;
   /*content*/
   color: #267b98;
+  
 }
 
 .card-title{
@@ -147,10 +156,15 @@ header {
   font-size: small;
 }
 
+.card-items{
+  /*position*/
+  grid-area: items;
+}
+
 .nav-link{
+  /*position*/
   display: block;
   /*block*/
-  text-align: start;
   padding-top: 0.8rem;
   /*content*/
   font-size: small;
