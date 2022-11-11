@@ -88,6 +88,9 @@ header {
   line-height: 60px;
 }
 
+.navbar-brand span{
+  color:#D26900;
+}
 
 /*********Album*********/
 #album{
@@ -118,7 +121,7 @@ header {
   grid-gap: 0.7rem;
   /*block*/
   padding: 1rem;
-  align-content: flex-start;
+  align-content:flex-start;
   /*content*/
   width: 100%;
   /*陰影*/
@@ -159,6 +162,7 @@ header {
 .card-items{
   /*position*/
   grid-area: items;
+
 }
 
 .nav-link{
